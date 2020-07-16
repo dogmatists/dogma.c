@@ -30,6 +30,10 @@ enum {
   DOGMA_VERSION_PATCH = 0,
 };
 
+typedef struct Angle {
+  double radians;
+} Angle;
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
