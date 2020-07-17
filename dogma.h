@@ -30,9 +30,20 @@ enum {
   DOGMA_VERSION_PATCH = 0,
 };
 
+// See: https://dogma.dev/Angle/
 typedef struct Angle {
   double radians;
 } Angle;
+
+// See: https://dogma.dev/Latitude/
+typedef struct Latitude {
+  double radians;
+} Latitude;
+
+// See: https://dogma.dev/Longitude/
+typedef struct Longitude {
+  double radians;
+} Longitude;
 
 #ifdef __cplusplus
 } // extern "C"

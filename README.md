@@ -4,13 +4,15 @@
 [![C compatibility](https://img.shields.io/badge/c-C11%20%7C%20C18%20%7C%20C2x-blue)](#)
 [![Continuous integration](https://github.com/dogmatists/dogma.c/workflows/Continuous%20integration/badge.svg)](https://github.com/dogmatists/dogma.c/actions?query=workflow%3A%22Continuous+integration%22)
 
+<https://dogma.dev>
+
 ## Prerequisites
 
 - [C11][] compiler (for example, [Clang][] 3.1+ or [GCC][] 4.6+)
 
-[C11]:            https://en.wikipedia.org/wiki/C11_(C_standard_revision)
-[Clang]:          https://clang.llvm.org
-[GCC]:            https://gcc.gnu.org
+[C11]:   https://en.wikipedia.org/wiki/C11_(C_standard_revision)
+[Clang]: https://clang.llvm.org
+[GCC]:   https://gcc.gnu.org
 
 ## Installation
 
@@ -49,6 +51,10 @@ $ sudo make install
 ### Enums
 
 ### Structs
+
+- [`Angle`](https://dogma.dev/Angle/)
+- [`Latitude`](https://dogma.dev/Latitude/)
+- [`Longitude`](https://dogma.dev/Longitude/)
 
 ### Functions
 
