@@ -1,7 +1,7 @@
 # Dogma for C
 
 [![Project license](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
-[![C compatibility](https://img.shields.io/badge/c-C11%20%7C%20C18%20%7C%20C2x-blue)](#)
+![C compatibility](https://img.shields.io/badge/c-C11%20%7C%20C18%20%7C%20C2x-blue)
 [![Continuous integration](https://github.com/dogmatists/dogma.c/workflows/Continuous%20integration/badge.svg)](https://github.com/dogmatists/dogma.c/actions?query=workflow%3A%22Continuous+integration%22)
 
 <https://dogma.dev>
