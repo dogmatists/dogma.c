@@ -20,9 +20,10 @@
 extern "C" {
 #endif
 
-#include <stdbool.h> // for bool
-#include <stddef.h>  // for size_t
-#include <stdint.h>  // for {u,}int*_t
+#include <math.h>     // for M_PI
+#include <stdbool.h>  // for bool
+#include <stddef.h>   // for size_t
+#include <stdint.h>   // for {u,}int*_t
 
 #include "dogma/version.h"
 #include "dogma/angle.h"

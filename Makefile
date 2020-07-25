@@ -16,11 +16,12 @@ all: $(HEADERS)
 
 # Rules for verification:
 
-test: check
+test: test.c dogma.h
+	$(CC) -std=c11 -Wall -Wextra -Wno-unused-function -o test test.c && ./test
 
-check: lint
+check: lint test
 
-.PHONY: test check
+.PHONY: check
 
 # Rules for installation:
 
@@ -49,7 +50,7 @@ dogma.h: Rakefile dogma.h.in $(wildcard dogma/*.h)
 lint: lint-h
 
 lint-h:
-	@printf '%s\n' $(HEADERS) | sort | xargs -n1 $(CC) -x c-header -std=c11 -Wall -Wextra -fsyntax-only
+	@printf '%s\n' $(HEADERS) | sort | xargs -n1 $(CC) -x c-header -std=c11 -Wall -Wextra -Wno-unused-function -fsyntax-only
 
 clean:
 	@rm -Rf *~

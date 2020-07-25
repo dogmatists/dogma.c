@@ -4,5 +4,5 @@
 
 // See: https://dogma.dev/Longitude
 typedef struct Longitude {
-  double radians;
+  Angle angle;
 } Longitude;

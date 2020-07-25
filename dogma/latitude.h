@@ -4,5 +4,5 @@
 
 // See: https://dogma.dev/Latitude
 typedef struct Latitude {
-  double radians;
+  Angle angle;
 } Latitude;
