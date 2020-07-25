@@ -2,7 +2,7 @@
 
 #pragma once
 
-// See: https://dogma.dev/Latitude/
+// See: https://dogma.dev/Latitude
 typedef struct Latitude {
   double radians;
 } Latitude;

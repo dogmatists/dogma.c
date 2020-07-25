@@ -2,7 +2,7 @@
 
 #pragma once
 
-// See: https://dogma.dev/Longitude/
+// See: https://dogma.dev/Longitude
 typedef struct Longitude {
   double radians;
 } Longitude;

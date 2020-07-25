@@ -2,7 +2,7 @@
 
 #pragma once
 
-// See: https://dogma.dev/Angle/
+// See: https://dogma.dev/Angle
 typedef struct Angle {
   double radians;
 } Angle;
