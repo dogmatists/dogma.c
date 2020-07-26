@@ -18,7 +18,7 @@ all: $(HEADERS)
 # Rules for verification:
 
 test: test.c dogma.h
-	$(CC) -std=c11 -Wall -Wextra -Wno-unused-function -o test test.c && ./test
+	$(CC) -std=c11 -Wall -Wextra -Wno-unused-function -o $@ $< && ./$@
 
 check: lint test
 
@@ -57,7 +57,7 @@ format:
 	find . -name '*.[ch]' | xargs $(CLANGFORMAT) -style=file -i
 
 clean:
-	@rm -Rf *~
+	@rm -Rf test *~
 
 distclean: clean
 
