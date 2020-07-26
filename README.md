@@ -36,6 +36,11 @@ $ sudo make install
 
 ### Checking the library version
 
+```c
+printf("Dogma for C %d.%d.%d\n",
+    DOGMA_VERSION_MAJOR, DOGMA_VERSION_MINOR, DOGMA_VERSION_PATCH);
+```
+
 ### Miscellaneous examples
 
 ## Reference

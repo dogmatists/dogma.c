@@ -4,7 +4,13 @@
 
 #include <assert.h>  // for assert()
 #include <errno.h>   // for errno, EDOM
+#include <stdio.h>   // for printf()
 #include <stdlib.h>  // for EXIT_SUCCESS
+
+static void example_version(void) {
+  printf("Dogma for C %d.%d.%d\n",
+      DOGMA_VERSION_MAJOR, DOGMA_VERSION_MINOR, DOGMA_VERSION_PATCH);
+}
 
 static void test_Angle_radians(void) {
   assert(AngleToRadians(AngleFromRadians(0)) == 0);
@@ -56,6 +62,8 @@ static void test_Longitude(void) {
 }
 
 int main(void) {
+  example_version();
+
   test_Angle();
   test_Latitude();
   test_Longitude();
