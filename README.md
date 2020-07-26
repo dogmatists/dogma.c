@@ -42,11 +42,9 @@ $ sudo make install
 
 ### Constants
 
-#### `DOGMA_VERSION_MAJOR`
-
-#### `DOGMA_VERSION_MINOR`
-
-#### `DOGMA_VERSION_PATCH`
+- `DOGMA_VERSION_MAJOR`
+- `DOGMA_VERSION_MINOR`
+- `DOGMA_VERSION_PATCH`
 
 ### Enums
 
@@ -57,6 +55,17 @@ $ sudo make install
 - [`Longitude`](https://dogma.dev/Longitude)
 
 ### Functions
+
+- `AngleFromDegrees`
+- `AngleFromRadians`
+- `AngleFromTurns`
+- `AngleToDegrees`
+- `AngleToRadians`
+- `AngleToTurns`
+- `Latitude`
+- `LatitudeToDegrees`
+- `Longitude`
+- `LongitudeToDegrees`
 
 ## See Also
 
