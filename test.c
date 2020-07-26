@@ -2,8 +2,8 @@
 
 #include "dogma.h"
 
-#include <errno.h>   // for errno, EDOM
 #include <assert.h>  // for assert()
+#include <errno.h>   // for errno, EDOM
 #include <stdlib.h>  // for EXIT_SUCCESS
 
 static void test_Angle_radians(void) {

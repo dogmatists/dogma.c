@@ -138,5 +138,5 @@ static inline double LongitudeToDegrees(const Longitude longitude) {
 }
 
 #ifdef __cplusplus
-} // extern "C"
+}  // extern "C"
 #endif

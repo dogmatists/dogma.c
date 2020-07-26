@@ -40,6 +40,10 @@ jobs:
       - name: Record the GCC version
         run: gcc --version
       - name: Run unit tests using Clang
-        run: make test CC=clang
+        run: make test CC=clang -B
+        env:
+          RUBYOPT: -W0
       - name: Run unit tests using GCC
-        run: make test CC=gcc
+        run: make test CC=gcc -B
+        env:
+          RUBYOPT: -W0

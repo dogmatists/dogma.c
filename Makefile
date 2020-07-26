@@ -4,6 +4,7 @@ libdir        = $(exec_prefix)/lib
 includedir    = $(prefix)/include
 datarootdir   = $(prefix)/share
 
+CLANGFORMAT   = clang-format
 RAKE          = rake
 
 HEADERS      := dogma.h
@@ -52,6 +53,9 @@ lint: lint-h
 lint-h:
 	@printf '%s\n' $(HEADERS) | sort | xargs -n1 $(CC) -x c-header -std=c11 -Wall -Wextra -Wno-unused-function -fsyntax-only
 
+format:
+	find . -name '*.[ch]' | xargs $(CLANGFORMAT) -style=file -i
+
 clean:
 	@rm -Rf *~
 
@@ -61,7 +65,7 @@ mostlyclean: clean
 
 maintainer-clean: clean
 
-.PHONY: lint lint-h clean distclean mostlyclean maintainer-clean
+.PHONY: lint lint-h format clean distclean mostlyclean maintainer-clean
 
 .SECONDARY:
 .SUFFIXES:
