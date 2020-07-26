@@ -26,6 +26,7 @@ extern "C" {
 #include <stdint.h>   // for {u,}int*_t
 
 #include "dogma/version.h"
+#include "dogma/math.h"
 #include "dogma/angle.h"
 #include "dogma/latitude.h"
 #include "dogma/longitude.h"

@@ -2,16 +2,14 @@
 
 #pragma once
 
+#include "math.h"
+
 /**
  * @see https://dogma.dev/Angle
  */
 typedef struct Angle {
   double radians;
 } Angle;
-
-#ifndef M_PI
-#define M_PI (3.14159265358979323846)
-#endif
 
 /// Constructs an angle from radians.
 static inline Angle AngleFromRadians(const double radians) {
