@@ -2,6 +2,9 @@
 
 #pragma once
 
+/**
+ * @see https://dogma.dev/history
+ */
 enum {
   DOGMA_VERSION_MAJOR = 0,
   DOGMA_VERSION_MINOR = 0,

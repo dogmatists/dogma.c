@@ -20,6 +20,7 @@
 extern "C" {
 #endif
 
+#include <errno.h>    // for errno, EDOM
 #include <math.h>     // for M_PI
 #include <stdbool.h>  // for bool
 #include <stddef.h>   // for size_t
