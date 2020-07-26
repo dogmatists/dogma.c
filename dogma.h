@@ -21,7 +21,6 @@ extern "C" {
 #endif
 
 #include <errno.h>    // for errno, EDOM
-#include <math.h>     // for M_PI
 #include <stdbool.h>  // for bool
 #include <stddef.h>   // for size_t
 #include <stdint.h>   // for {u,}int*_t
@@ -41,6 +40,10 @@ enum {
 typedef struct Angle {
   double radians;
 } Angle;
+
+#ifndef M_PI
+#define M_PI (3.14159265358979323846)
+#endif
 
 /// Constructs an angle from radians.
 static inline Angle AngleFromRadians(const double radians) {
